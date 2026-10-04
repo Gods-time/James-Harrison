@@ -1,0 +1,6 @@
+By default, the minFraud service matches devices using IP addresses. This works well in most cases, but IP-based matching can be less reliable when multiple users share the same IP address. Common scenarios include:
+
+Shared or corporate IPs where many employees or users share a single public IP address.
+Carrier-Grade NAT (CGNAT) where an ISP assigns the same public IP to many subscribers.
+VPNs where multiple users route traffic through the same VPN endpoint.
+Explicit device linking solves this by using a tracking_token to match devices with high confidence, independent of the IP address.
