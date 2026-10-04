@@ -1,0 +1,7 @@
+The client-side tracking code returns a tracking token string. When you pass this token to the minFraud API in the /device/tracking_token field, the service uses it to match the device directly. When a valid token is found, the device is matched with high confidence regardless of IP address changes.
+
+Implementation steps
+Collect the tracking token on the client side using the appropriate SDK for your platform.
+Pass the token to your backend (e.g., via a hidden form field, session storage, or API call).
+Include the token in your minFraud API request’s device object as tracking_token.
+See the Web, Android, and iOS guides for platform-specific examples.
