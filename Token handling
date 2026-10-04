@@ -1,0 +1,2 @@
+The tracking token is an opaque string. Do not parse it or make assumptions about its format, as the format may change without notice.
+Tokens should be treated as transient. Generate a fresh token for each session or transaction rather than storing tokens long-term.
